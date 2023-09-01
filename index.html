@@ -8,20 +8,20 @@
 </head>
 <body>
 <nav class="navbar bg-body-tertiary">
-    <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1"> <h1>Coffee!</h1></span>
-    </div>
+        <span class="navbar-brand mb-0">Coffee!</span>
 </nav>
 <div class="page-wrapper">
     <div class="container d-flex justify-content-between">
-        <div class="row flex-shrink-1">
-            <img src="images/pexels-karolina-grabowska-4471324.jpg" style="width: 500px;">
+        <!--THE CONTAINER FOR THE COFFEE PRODUCTS-->
+        <div class="row d-flex col-8 flex-shrink-1 coffees" id="coffees">
+
         </div>
-        <div class="row flex-column">
-            <div class="col d-flex justify-content-end ">
+        <!--CONTAINER FOR SEARCH FUNCTIONS-->
+        <div class="row flex-column col-4">
+            <div class="col d-flex ">
                 <label class="roast-selection">Roast
                     <select id="roast-selection" class="form-select" aria-label="Default select example">
-                        <option selected>Select Roast</option>
+                        <option selected value="All">All</option>
                         <option value="1">Light</option>
                         <option value="2">Medium</option>
                         <option value="3">Dark</option>
@@ -29,12 +29,12 @@
                 </label>
                 <label>Coffee Name
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Input Coffee" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control" placeholder="Input Coffee" aria-label="Recipient's username" aria-describedby="button-addon2" id="search" name="search">
                         <button class="btn btn-outline-secondary" type="button" id="submit">Submit</button>
                     </div>
                 </label>
             </div>
-            <div class="col d-flex justify-content-end flex-column">
+            <div class="col d-flex flex-column">
                 <h2>Add a Coffee</h2>
                 <label>Roast
                     <select class="form-select" aria-label="Default select example">
@@ -42,7 +42,6 @@
                         <option value="1">Light</option>
                         <option value="2">Medium</option>
                         <option value="3">Dark</option>
-                        <!--    Need Button-->
                     </select>
                 </label>
                 <label>Coffee Name
@@ -53,23 +52,9 @@
                 </label>
             </div>
         </div>
-
-    </div>
-</div>
-<div class="coffees" id="coffees">
-
+        </div>
 </div>
 
-<!--    <table>-->
-<!--        <thead>-->
-<!--            <tr>-->
-<!--                <th>ID</th>-->
-<!--                <th>NAME</th>-->
-<!--                <th>ROAST</th>-->
-<!--            </tr>-->
-<!--        </thead>-->
-<!--        <tbody id="coffees"></tbody>-->
-<!--    </table>-->
 
 <script src="main.js">
 </script>
