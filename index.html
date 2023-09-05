@@ -21,10 +21,10 @@
             <div class="col d-flex ">
                 <label class="roast-selection">Roast
                     <select id="roast-selection" class="form-select" aria-label="Default select example">
-                        <option selected value="All">All</option>
-                        <option value="1">Light</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Dark</option>
+                        <option value="All">All</option>
+                        <option value="light">Light</option>
+                        <option value="medium">Medium</option>
+                        <option value="dark">Dark</option>
                     </select>
                 </label>
                 <label>Coffee Name
@@ -36,20 +36,21 @@
             </div>
             <div class="col d-flex flex-column">
                 <h2>Add a Coffee</h2>
+                <form id="myForm">
                 <label>Roast
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">Light</option>
-                        <option value="2">Medium</option>
-                        <option value="3">Dark</option>
+                    <select class="form-select" aria-label="Default select example" name="roastname">
+                        <option selected value="light">Light</option>
+                        <option value="medium">Medium</option>
+                        <option value="dark">Dark</option>
                     </select>
                 </label>
                 <label>Coffee Name
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Input Coffee" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <input type="text" class="form-control" placeholder="Input Coffee" aria-label="Recipient's username" aria-describedby="button-addon2" name="coffeename">
                         <button class="btn btn-outline-secondary" type="button" id="btn-2">Submit</button>
                     </div>
                 </label>
+                </form>
             </div>
         </div>
         </div>

@@ -25,7 +25,11 @@ function updateCoffees(e) {
         if (coffee.roast === selectedRoast) {
             filteredCoffees.push(coffee);
         }
+        if (selectedRoast ==="All"){
+            filteredCoffees = coffees
+        }
     });
+
     tbody.innerHTML = renderCoffees(filteredCoffees);
 }
 
@@ -47,9 +51,9 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-var tbody = document.querySelector('#coffees');
-var submitButton = document.querySelector('#submit');
-var roastSelection = document.querySelector('#roast-selection');
+var tbody = document.querySelector('#coffees'); //SELECTS THE HTML CONTAINER FOR RESULTS
+var submitButton = document.querySelector('#submit');//SELECTS SEARCH BUTTON
+var roastSelection = document.querySelector('#roast-selection');//SELECTS ROAST FILTER
 
 tbody.innerHTML = renderCoffees(coffees);
 
@@ -61,7 +65,7 @@ roastselect.addEventListener("change",
     (event)=>{
     switch (roastSelection.value){
         case "All":
-            alert("All");
+            // tbody.innerHTML = renderCoffees(coffees);
             break;
         case "1":
             alert("1");
@@ -96,6 +100,26 @@ search.addEventListener("keyup", (event)=>{
                 noResults = false;
             }
         }
+})
+let cafe = document.querySelector("#myForm");
+let button = document.querySelector("#btn-2");
+button.addEventListener("click", function (event) {
+    event.preventDefault()
+    // Prevents the form from submitting
+    let roast = cafe.elements.roastname.value;
+    let coffee = cafe.elements.coffeename.value;
+    let num = coffees.length+1;
+    // let newcoffee =[num,coffee,roast];
+    // coffees.push(newcoffee)
+    let newcoffee = function (id,coffeename,roastname){
+        return {
+            id : num,
+            name : coffeename,
+            roast : roastname,
+        }
+    }
+    coffees.push(newcoffee(num,coffee,roast))
+    console.log(coffees)
 })
 
 // document.addEventListener('keydown',hi)
