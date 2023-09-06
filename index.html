@@ -7,18 +7,74 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav class="navbar bg-body-tertiary">
-        <span class="navbar-brand mb-0">Coffee!</span>
-</nav>
 <div class="page-wrapper">
-    <div class="container d-flex justify-content-between">
+    <div class="bg-img">
+    <div class="container-fluid">
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <h5 class="text-body-emphasis h4">Where you bean?&trade;</h5>
+                <span class="text-body-secondary">We're here to bring you the world's best coffee products out of Houston, Texas!</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </div>
+    </div>
+    <br>
+        <!--CAROUSEL FOR IMAGES IN CENTER-->
+    <div id="carouselExampleIndicators" class="carousel slide" >
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" ></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/pexels-clem-onojeghuo-175711.jpg" class="d-block w-100" alt="..." style="height: 700px; width: 500px;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-wendy-wei-2813135.jpg" class="d-block w-100" alt="..." style="height: 700px; width: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img src="img/pexels-lina-kivaka-1879321.jpg" class="d-block w-100" alt="..." style="height: 700px; width: 100%;">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br>
+    <div class="row">
+    <div class="col">
+        <div class="menu-title">
+            <h5 class="d-flex menu-title-text">El Menu</h5>
+        </div>
+        <div class="shop-info">
+            <h6 class=" d-flex days-hours">Monday - Friday <br>
+                7 am - 5 pm</h6>
+    </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-between">
+        <img src="img/pexels-elina-sazonova-1907099.jpg" class="img-left" alt="img-left">
         <!--THE CONTAINER FOR THE COFFEE PRODUCTS-->
         <div class="row d-flex col-8 flex-shrink-1 coffees" id="coffees">
+            <div class="col-coffees">
 
+            </div>
         </div>
         <!--CONTAINER FOR SEARCH FUNCTIONS-->
         <div class="row flex-column col-4">
-            <div class="col d-flex ">
+            <div class="col d-flex justify-content-center gap-1">
                 <label class="roast-selection">Roast
                     <select id="roast-selection" class="form-select" aria-label="Default select example">
                         <option value="All">All</option>
@@ -28,14 +84,15 @@
                     </select>
                 </label>
                 <label>Coffee Name
-                    <div class="input-group mb-3">
+                    <span class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Input Coffee" aria-label="Recipient's username" aria-describedby="button-addon2" id="search" name="search">
                         <button class="btn btn-outline-secondary" type="button" id="submit">Submit</button>
-                    </div>
+                    </span>
                 </label>
             </div>
-            <div class="col d-flex flex-column">
-                <h2>Add a Coffee</h2>
+            <img src="img/pexels-lukas-1419936.jpg" class="img-right" alt="img-right">
+            <div class="col d-flex flex-column justify-content-center gap-2">
+                <h2 class="extra-text">Add a coffee?</h2>
                 <form id="myForm">
                 <label>Roast
                     <select class="form-select" aria-label="Default select example" name="roastname">
@@ -45,20 +102,20 @@
                     </select>
                 </label>
                 <label>Coffee Name
-                    <div class="input-group mb-3">
+                    <span class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Input Coffee" aria-label="Recipient's username" aria-describedby="button-addon2" name="coffeename">
                         <button class="btn btn-outline-secondary" type="button" id="btn-2">Submit</button>
-                    </div>
+                    </span>
                 </label>
                 </form>
             </div>
         </div>
         </div>
-</div>
+    </div>
+    </div>
 
-
-<script src="main.js">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
