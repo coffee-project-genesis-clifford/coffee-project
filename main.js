@@ -1,10 +1,13 @@
 "use strict"
 //IS CALLED TO CREATE THE OUTLINE FOR EACH COFFEE PRODUCT
 function renderCoffee(coffee) {
-    var html = '<div class="coffee col-4" id="coffee" style="list-style: none">';
+    var html ='<div class="row d-flex">'
+        html+='<div class="col-4">'; html += '<img class="col-4 coffee" src='+coffee.background+'>';html+='</div>'
+    html+='<div class="coffee col-4" id="coffee" style="list-style: none;">';
     html += '<h1 style="font-size: 30px" class="coffeeName">' + coffee.name + '</h1>';
     html += '<h3 class="coffeeRoast">' + coffee.roast + '</h3>';
     html += '</div>';
+    html+='</div>';
 
     return html;
 }
@@ -35,20 +38,20 @@ function updateCoffees(e) {
 
 // from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
 var coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
-    {id: 2, name: 'Half City', roast: 'light'},
-    {id: 3, name: 'Cinnamon', roast: 'light'},
-    {id: 4, name: 'City', roast: 'medium'},
-    {id: 5, name: 'American', roast: 'medium'},
-    {id: 6, name: 'Breakfast', roast: 'medium'},
-    {id: 7, name: 'High', roast: 'dark'},
-    {id: 8, name: 'Continental', roast: 'dark'},
-    {id: 9, name: 'New Orleans', roast: 'dark'},
-    {id: 10, name: 'European', roast: 'dark'},
-    {id: 11, name: 'Espresso', roast: 'dark'},
-    {id: 12, name: 'Viennese', roast: 'dark'},
-    {id: 13, name: 'Italian', roast: 'dark'},
-    {id: 14, name: 'French', roast: 'dark'},
+    {id: 1, name: 'Light City', roast: 'light',background:'twitter.png'},
+    {id: 2, name: 'Half City', roast: 'light',background:'red'},
+    {id: 3, name: 'Cinnamon', roast: 'light',background:'red'},
+    {id: 4, name: 'City', roast: 'medium',background:'red'},
+    {id: 5, name: 'American', roast: 'medium',background:'red'},
+    {id: 6, name: 'Breakfast', roast: 'medium',background:'red'},
+    {id: 7, name: 'High', roast: 'dark',background:'red'},
+    {id: 8, name: 'Continental', roast: 'dark',background:'red'},
+    {id: 9, name: 'New Orleans', roast: 'dark',background:'red'},
+    {id: 10, name: 'European', roast: 'dark',background:'red'},
+    {id: 11, name: 'Espresso', roast: 'dark',background:'red'},
+    {id: 12, name: 'Viennese', roast: 'dark',background:'red'},
+    {id: 13, name: 'Italian', roast: 'dark',background:'red'},
+    {id: 14, name: 'French', roast: 'dark',background:'red'},
 ];
 
 var tbody = document.querySelector('#coffees'); //SELECTS THE HTML CONTAINER FOR RESULTS
