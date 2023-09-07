@@ -91,20 +91,20 @@ td, th {
     bottom: 30px;
     left: 60px
 }
+/*I CANNOT!*/
+/*@media screen and (min-width: 425px){*/
+/*    .navbar{*/
+/*    display: flex;*/
+/*        width: 100%;*/
+/*    }*/
+/*    body{*/
+/*        overflow-x: hidden;*/
+/*    }*/
+/*}*/
 
-@media screen and (min-width: 425px){
-    .navbar{
-    display: flex;
-        width: 100%;
-    }
-    body{
-        overflow-x: hidden;
-    }
-}
-
-@media screen and (max-width: 1440px) {
-.page-wrapper{
-    width: 100%;
-}
-}
+/*@media screen and (max-width: 1440px) {*/
+/*.page-wrapper{*/
+/*    width: 100%;*/
+/*}*/
+/*}*/
 
