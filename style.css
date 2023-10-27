@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bebas+Neue&display=swap');
 table {
     border-collapse: collapse;
     margin: 15px 0;
@@ -7,3 +9,102 @@ td, th {
     border: 1px solid black;
     padding: 5px 10px;
 }
+.page-wrapper {
+    width: 100%;
+    background-color: #fffff0;
+    font-family: "bebas neue";
+}
+.navbar .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-item .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 0.25rem;
+    color: #fff;
+}
+
+.fa-li {
+    position: relative;
+    left: 0;
+}
+.coffees {
+    display: flex;
+    background-color: #dfca7e;
+    width: 475px;
+    border-color: cornflowerblue;
+    border-width: 7px;
+    border-style: inset;
+    padding-top: 50px;
+    color: darkslateblue;
+    font-family: amatic sc;
+    text-decoration-line: underline;
+    text-align: center;
+    position: relative;
+    left: 5px;
+}
+.h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    color: lightblue;
+    font-family: "bebas neue";
+}
+.img-left {
+    display: flex;
+    width: 450px;
+    height: 700px;
+    position: relative;
+    left: 20px;
+
+}
+.menu-title {
+    display: flex;
+    justify-content: center;
+    font-family: amatic sc;
+}
+.menu-title-text {
+    font-size: 3rem;
+}
+.days-hours {
+    justify-content: center;
+    font-family: amatic sc;
+    text-align: center;
+}
+.text-body-secondary {
+    font-family: "bebas neue";
+}
+.extra-text {
+    display: flex;
+    justify-content: center;
+}
+#myForm {
+    position: relative;
+    left: 55px;
+}
+.img-right {
+    padding: 0;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 30px;
+    left: 60px
+}
+/*I CANNOT!*/
+/*@media screen and (min-width: 425px){*/
+/*    .navbar{*/
+/*    display: flex;*/
+/*        width: 100%;*/
+/*    }*/
+/*    body{*/
+/*        overflow-x: hidden;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 1440px) {*/
+/*.page-wrapper{*/
+/*    width: 100%;*/
+/*}*/
+/*}*/
+
